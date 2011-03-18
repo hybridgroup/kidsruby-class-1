@@ -1,0 +1,10 @@
+holiday = ask "Which holiday?"
+familymember = ask "Name of family member?"
+activity = ask "What activity?"
+smallproblem = ask "Name of small problem"
+
+puts "I just had a fun time over " + holiday + "."
+puts "My " + familymember " and I were together."
+puts "I also got to " + activity +"."
+puts "I had " + smallproblem + " but it was OK."
+puts "Pretty much I had a good " + holiday + "with my family."
