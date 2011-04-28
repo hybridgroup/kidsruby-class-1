@@ -1,5 +1,5 @@
 !SLIDE 
-# Los Angeles Ruby Conference For Kids #
+# KidsRuby - Class 1 #
 
 !SLIDE 
 # What is Programming #
@@ -23,7 +23,7 @@
 puts 1
 
 !SLIDE
-Operators
+# Operators
 
 !SLIDE code
 puts 1 + 1
@@ -114,7 +114,7 @@ activity = ask "What activity?"
 smallproblem = ask "Name of small problem"
 
 puts "I just had a fun time over " + holiday + "."
-puts "My " + familymember " and I were together."
+puts "My " + familymember + "and I were together."
 puts "I also got to " + activity +"."
 puts "I had " + smallproblem + " but it was OK."
 puts "Pretty much I had a good " + holiday + "with my family."
