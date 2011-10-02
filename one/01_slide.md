@@ -50,7 +50,7 @@
 !SLIDE
     @@@ ruby
     x = ask "what is x?"
-    answer = ((37 / 15) + 37 * x.to_i) * 3.7
+    answer = ((37 / 15) + 37 * x) * 3.7
     puts answer
 
 !SLIDE
@@ -87,7 +87,7 @@
 !SLIDE
     @@@ ruby
     what_to_say = ask "What should I say?"
-    how_many = ask("How many times?").to_i
+    how_many = ask("How many times?")
     how_many.times do
       puts what_to_say
     end
