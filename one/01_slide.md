@@ -76,9 +76,9 @@
 
 !SLIDE
     @@@ ruby
-    what_to_say = ask "What should I say?"
+    words = ask "What should I say?"
     10.times do
-      puts what_to_say
+      puts words
     end
 
 !SLIDE
@@ -86,10 +86,10 @@
 
 !SLIDE
     @@@ ruby
-    what_to_say = ask "What should I say?"
-    how_many = ask("How many times?")
-    how_many.times do
-      puts what_to_say
+    words = ask "What should I say?"
+    count = ask("How many times?")
+    count.times do
+      puts words
     end
 
 !SLIDE
