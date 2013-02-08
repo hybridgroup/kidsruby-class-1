@@ -6,8 +6,8 @@ This is the curriculum used for class 1 of KidsRuby "live". It is intended to ta
 
 Here is how you use it:
 
-    gem install showoff
-    showoff serve
+    bundle install
+    bundle exec showoff serve
 
 ## How to help
 
