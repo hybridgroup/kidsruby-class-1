@@ -14,139 +14,139 @@
 # Go Forward #
 
 !SLIDE
-```ruby
-require 'socket'
-socket = TCPSocket.new("localhost", 4567)
 
-require 'sphero'
-forward = 0
+    @@@ ruby
+    require 'socket'
+    socket = TCPSocket.new("localhost", 4567)
 
-Sphero.start socket do
-  roll 90, forward
-  keep_going 10
+    require 'sphero'
+    forward = 0
 
-  stop
-end
-```
+    Sphero.start socket do
+      roll 90, forward
+      keep_going 10
+
+      stop
+    end
 
 !SLIDE
 # Forward and Backward #
 
 !SLIDE
-```ruby
-require 'socket'
-socket = TCPSocket.new("localhost", 4567)
 
-require 'sphero'
-forward = 0
-backward = 180
+    @@@ ruby
+    require 'socket'
+    socket = TCPSocket.new("localhost", 4567)
 
-Sphero.start socket do
-  roll 90, forward
-  keep_going 10
+    require 'sphero'
+    forward = 0
+    backward = 180
 
-  roll 90, backward
-  keep_going 10
+    Sphero.start socket do
+      roll 90, forward
+      keep_going 10
 
-  stop
-end
-```
+      roll 90, backward
+      keep_going 10
+
+      stop
+    end
 
 !SLIDE
 # Square #
 
 !SLIDE
-```ruby
-require 'socket'
-socket = TCPSocket.new("localhost", 4567)
 
-require 'sphero'
-Sphero.start socket do
-  roll 90, FORWARD
-  keep_going 10
+    @@@ ruby
+    require 'socket'
+    socket = TCPSocket.new("localhost", 4567)
 
-  roll 90, RIGHT
-  keep_going 10
+    require 'sphero'
+    Sphero.start socket do
+      roll 90, FORWARD
+      keep_going 10
 
-  roll 90, BACKWARD
-  keep_going 10
+      roll 90, RIGHT
+      keep_going 10
 
-  roll 90, LEFT
-  keep_going 10
+      roll 90, BACKWARD
+      keep_going 10
 
-  stop
-end
-```
+      roll 90, LEFT
+      keep_going 10
+
+      stop
+    end
 
 !SLIDE
 # Mars Mission #
 
 !SLIDE
-```ruby
-require 'socket'
-socket = TCPSocket.new("localhost", 4567)
 
-require 'sphero'
+    @@@ ruby
+    require 'socket'
+    socket = TCPSocket.new("localhost", 4567)
 
-Sphero.start socket do
-  roll 90, FORWARD
-  keep_going 10
-  stop
-  rgb 0, 0, 255
-  sleep 10
+    require 'sphero'
 
-  roll 90, RIGHT
-  keep_going 10
-  stop
-  rgb 0, 255, 0
-  sleep 10
+    Sphero.start socket do
+      roll 90, FORWARD
+      keep_going 10
+      stop
+      rgb 0, 0, 255
+      sleep 10
 
-  roll 90, BACKWARD
-  keep_going 10
-  stop
-  rgb 255, 0, 0
-  sleep 10
+      roll 90, RIGHT
+      keep_going 10
+      stop
+      rgb 0, 255, 0
+      sleep 10
 
-  roll 60, LEFT
-  keep_going 10
-  stop
-  rgb 0, 0, 255
-end
-```
+      roll 90, BACKWARD
+      keep_going 10
+      stop
+      rgb 255, 0, 0
+      sleep 10
+
+      roll 60, LEFT
+      keep_going 10
+      stop
+      rgb 0, 0, 255
+    end
 
 !SLIDE
 # Mars Mission (Improved) #
 
 !SLIDE
-```ruby
-require 'socket'
-socket = TCPSocket.new("localhost", 4567)
 
-require 'sphero'
+    @@@ ruby
+    require 'socket'
+    socket = TCPSocket.new("localhost", 4567)
 
-Sphero.start socket do
-  def move(direction)
-    roll 90, FORWARD
-    keep_going 10
-    stop
-  end
+    require 'sphero'
 
-  move(FORWARD)
-  rgb 0, 0, 255
-  sleep 10
+    Sphero.start socket do
+      def move(direction)
+        roll 90, FORWARD
+        keep_going 10
+        stop
+      end
 
-  move(RIGHT)
-  rgb 0, 255, 0
-  sleep 10
+      move(FORWARD)
+      rgb 0, 0, 255
+      sleep 10
 
-  move BACKWARD
-  rgb 255, 0, 0
-  sleep 10
+      move(RIGHT)
+      rgb 0, 255, 0
+      sleep 10
 
-  move LEFT
-  rgb 0, 0, 255
-end
-```
+      move BACKWARD
+      rgb 255, 0, 0
+      sleep 10
+
+      move LEFT
+      rgb 0, 0, 255
+    end
 
 !SLIDE
 # Demolition Derby #

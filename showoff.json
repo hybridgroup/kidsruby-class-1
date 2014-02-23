@@ -1,1 +1,7 @@
-{ "name": "KidsRuby - Having Fun With Programming", "sections": [ {"section":"basic"}, {"section":"graphics"}, {"section":"sphero"} ]}
+{ "name": "KidsRuby - Having Fun With Programming", 
+"sections": [ 
+		{"section":"basic"}, 
+		{"section":"graphics"}, 
+		{"section":"sphero"} 
+	]
+}
